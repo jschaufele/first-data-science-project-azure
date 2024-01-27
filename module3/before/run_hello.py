@@ -23,12 +23,13 @@ cpu_cluster.wait_for_completion(show_output=True)
 ######
 
 # Create an experiment
-experiment = None
+experiment = Experiment(ws,name='first-experiment')
 # Create a run configuration to run a script
-config = None
+source_directory=""
+config = ScriptRunConfig(source_directory==".",script="module3/hello.py",compute_target=cpu_cluster_name)
 
 #Submit the run to the experiment
-run = None
+run = experiment.submit(config)
 
 aml_url = run.get_portal_url()
 print(aml_url)

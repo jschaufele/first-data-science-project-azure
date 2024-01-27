@@ -1,0 +1,4 @@
+pip install -r requirements.txt
+python.exe -m pip install --upgrade pip
+
+C:\Users\jscha\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
